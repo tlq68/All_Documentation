@@ -1,3 +1,169 @@
+body {
+  font-size: 16px;
+}
+
+/* Start navbar */
+
+h1 {
+  font-size: 26px;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+
+  /* Only has vertical scrollbar */
+  overflow-y: scroll;
+  width: 275px;
+  height: 100vh;
+  background-color: white;
+
+  /* Border */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.menu__item {
+  /* Center the content horizontally */
+  align-items: center;
+  display: flex;
+}
+
+.menu__divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  height: 1px;
+}
+
+#main-doc {
+  margin-left: 18%;
+}
+
+a.nav-link {
+  color: rgb(104, 103, 103);
+  text-decoration: none;
+  text-shadow: 0.5px 0.2px 0 rgb(20, 20, 20);
+}
+
+a.nav-link:hover,
+a.nav-link:focus {
+  color: rgb(0, 0, 0);
+  background-color: rgba(54, 44, 44, 0.301);
+}
+
+/* Fast scroll from anchors*/
+html {
+  scroll-behavior: auto !important;
+}
+
+/* End navbar */
+
+/* Start main-content */
+
+h2 {
+  font-size: 32px;
+  color: black;
+  margin-top: 25px;
+}
+
+h3 {
+  font-size: 24px;
+  color: black;
+  margin-top: 20px;
+}
+
 p {
-  color:red;
+  margin: 15px 0;
+}
+
+blockquote {
+  max-width: 90%;
+  margin-left: 35px;
+}
+
+li {
+  margin-top: 15px;
+}
+
+code {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(241, 239, 234);
+}
+
+.code-block {
+  color: black;
+  font-size: 14px;
+
+  /* Gets rid of small indent at the top of a code block. */
+  padding: 0;
+}
+
+.code-block-container {
+  color: black;
+  font-size: 0;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: rgb(241, 239, 234);
+}
+
+/* Fixes spacing of p elements within code blocks. */
+.p-code {
+  padding: 15px;
+}
+
+/* Lets the featured element in an example stick out */
+span.feature {
+  color: blue;
+}
+
+/* To avoid some symbols from wrapping. Namely double hyphens '--'. */
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* End main-content */
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+  #main-doc {
+    margin-left: 20vw;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  #main-doc {
+    margin-left: 20vw;
+  }
+}
+
+@media (min-width: 1035px) and (max-width: 1099px) {
+  #main-doc {
+    margin-left: 25vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1034px) {
+  #main-doc {
+    margin-left: 27vw;
+    border: 2px solid green;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 90%;
+  }
+
+  @media (max-width: 991px) {
+    #main-doc {
+      margin: 0;
+    }
+  }
+
+  nav.menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+  }
 }
