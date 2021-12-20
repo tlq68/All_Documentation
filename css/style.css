@@ -1,3 +1,8 @@
-div.row {
+body {
+  font-size: 16px;
+  background-color: rgb(64, 62, 80);
+}
+
+div.square_border {
   text-align: center;
 }
