@@ -121,3 +121,7 @@ div.square_border {
   border: 2px solid var(--r-gray);
   color: var(--r-gray);
 }
+
+#target_html, #target_css, #target_js {
+  margin-top: 2em;
+}
