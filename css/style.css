@@ -1,3 +1,37 @@
+:root {
+  --html-light: #E96228;
+  --html-dark: #DD4B25;
+
+  --css-light: #2965F1;
+  --css-dark: #285AEB;
+
+  --js-dark: #FBDC3D;
+  --js-light: #F7DF1E;
+
+  --bootstrap-dark: #592A9C;
+  --bootstrap-light: #8411F6;
+  
+  --sass-dark: #C76494;
+
+  --jquery-dark: #0C63A7;
+
+  --react-dark-gray: #212121;
+  --react-light-blue: #5FD6F7;
+
+  --sql-purple: #4B4DA0;
+  --sql-orange: #E98A38;
+
+  --ruby-background: #e49279;
+  --ruby-dark-red: #D4150E;
+  --ruby-light-red: #E80E12;
+
+  --python-blue: #376FA0;
+  --python-yellow: #F9C53B;
+
+  --r-blue: #0059B7;
+  --r-gray: #B4B5BA;
+}
+
 body {
   font-size: 16px;
   background-color: rgb(64, 62, 80);
@@ -22,3 +56,68 @@ div.square_border {
   align-items: center;
 }
 
+#target_html {
+  background-color: var(--html-dark);
+  border: 2px solid var(--html-light);
+  color: white;
+}
+
+#target_css {
+  background-color: var(--css-dark);
+  border: 2px solid var(--css-light);
+  color: white;
+}
+
+#target_js {
+  background-color: var(--js-dark);
+  border: 2px solid var(--js-light);
+  color: black;
+}
+
+#target_bootstrap {
+  background-color: var(--bootstrap-light);
+  border: 2px solid var(--bootstrap-dark);
+  color: white;
+}
+
+#target_sass {
+  background-color: white;
+  border: 2px solid var(--sass-dark);
+  color: var(--sass-dark);
+}
+
+#target_jquery {
+  background-color: white; 
+  border: 2px solid black;
+  color: var(--jquery-dark)
+}
+
+#target_react {
+  background-color: var(--react-dark-gray);
+  border: none;
+  color: var(--react-light-blue);
+}
+
+#target_sql {
+  background-color: var(--sql-purple);
+  border: 2px solid white;
+  color: var(--sql-orange);
+}
+
+#target_ruby {
+  background-color: var(--ruby-background);
+  border: 2px solid var(--ruby-light-red);
+  color: var(--ruby-dark-red)
+}
+
+#target_python {
+  background-color: var(--python-blue);
+  border: none;
+  color: var(--python-yellow);
+}
+
+#target_r {
+  background-color: var(--r-blue);
+  border: 2px solid var(--r-gray);
+  color: var(--r-gray);
+}
