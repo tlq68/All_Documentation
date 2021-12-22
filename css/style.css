@@ -1,4 +1,6 @@
 :root {
+  --hover-effect: rgba(0, 0, 0, 0.11);
+
   --html-light: #E96228;
   --html-dark: #DD4B25;
 
@@ -54,6 +56,17 @@ div.square_border {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+a:hover {
+  background-color: var(--hover-effect);
 }
 
 #target_html {
