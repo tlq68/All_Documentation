@@ -58,6 +58,9 @@ div.square_border {
   align-items: center;
 }
 
+div.square_border > div {
+  cursor: default;
+}
 a {
   display: flex;
   position: absolute;
@@ -67,6 +70,15 @@ a {
 
 a:hover {
   background-color: var(--hover-effect);
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: rgba(128, 128, 128, 0.603);
+  border-radius: 4px;
+  width: 96px;
+  height: 96px;
 }
 
 #target_html {
