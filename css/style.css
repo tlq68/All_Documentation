@@ -1,5 +1,6 @@
 :root {
   --hover-effect: rgba(0, 0, 0, 0.11);
+  --gray-out-effect: rgba(128, 128, 128, 0.603);
 
   --html-light: #E96228;
   --html-dark: #DD4B25;
@@ -75,7 +76,7 @@ a:hover {
 a.disabled {
   pointer-events: none;
   cursor: default;
-  background-color: rgba(128, 128, 128, 0.603);
+  background-color: var(--gray-out-effect);
   border-radius: 4px;
   width: 96px;
   height: 96px;
