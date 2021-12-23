@@ -120,6 +120,10 @@ summary:focus, summary:active details:focus, details:active {
   padding-right: 3em;
 }
 
+.dropdown-list > li:hover {
+  background-color: rgb(121, 110, 110);
+}
+
 code {
   padding: 5px;
   border-radius: 3px;
