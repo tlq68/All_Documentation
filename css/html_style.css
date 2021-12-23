@@ -91,6 +91,35 @@ li {
   margin-top: 15px;
 }
 
+details {
+  display: flex;
+  position: absolute;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  background-color: rgb(197, 197, 241);
+}
+
+details > summary {
+  list-style: none;
+}
+
+summary {
+  background-color: white;
+}
+
+summary:focus, summary:active details:focus, details:active {
+  user-select: none;
+}
+.dropdown {
+  margin-bottom: 3em;
+}
+
+.dropdown-list {
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 3em;
+}
+
 code {
   padding: 5px;
   border-radius: 3px;
