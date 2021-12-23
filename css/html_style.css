@@ -60,6 +60,12 @@ html {
 
 /* Start main-content */
 
+h1 {
+  font-size: 36px;
+  color: black;
+  margin-top: 25px;
+}
+
 h2 {
   font-size: 32px;
   color: black;
