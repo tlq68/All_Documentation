@@ -4,10 +4,6 @@ body {
 
 /* Start navbar */
 
-h1 {
-  font-size: 26px;
-}
-
 .menu {
   display: flex;
   position: fixed;
@@ -61,7 +57,7 @@ html {
 /* Start main-content */
 
 h1 {
-  font-size: 36px;
+  font-size: 34px;
   color: black;
   margin-top: 25px;
 }
