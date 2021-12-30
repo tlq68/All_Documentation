@@ -30,7 +30,7 @@
     <div class="menu__divider"></div>
     <a href="#structure_tags" class="nav-link menu__item">Structure Tags</a>
     <div class="menu__divider"></div>
-    <a href="#links_and_anchors" class="nav-link menu__item">Links and Anchors</a>
+    <a href="#links" class="nav-link menu__item">Links</a>
     <div class="menu__divider"></div>
     <a href="#forms" class="nav-link menu__item">Forms</a>
     <div class="menu__divider"></div>
@@ -97,7 +97,7 @@
           <h3>Headings and Navbars</h3>
          <div>
              <h4>Headings</h4>
-             <p>&emsp;HTML headings are used to display titles or subtitles on a webpage. There are a total of six header tags that all begin with the letter 'h' and are accompanied by a number (1-6).</p>
+             <p>&emsp;HTML headings are used to display titles or subtitles on a webpage. There are a total of six header tags that all begin with the letter 'h' and are accompanied by a number (1-6). The main heading, <code>&lt;h1&gt;</code> should be found within a <code>&lt;header&gt;</code> tag.</p>
              <ul>
               <li><code>&lt;h1&gt;</code> - Most important. Used for main title of a page</li>
               <li><code>&lt;h2&gt;</code> - Second-most important. Used for subtitles or titles of page segments</li>
@@ -142,12 +142,27 @@
             </ul>
         </section>
 
-        <section id="links_and_anchors" class="main-section">
-          <h3>Links and Anchors</h3>
-          <ul>
-            <li>Links</li>
-            <li>Anchors</li>
-          </ul>
+        <section id="links" class="main-section">
+          <h3>Links</h3>
+            <h4>Links</h4>
+            <p>Links, also sometimes referred to as anchors, can be used in an HTML document by using the <code>&lt;a&gt;</code> tag. There are two types of URLs that can be used as links. Absolute URLs, which use a full web address to most likely link to somewhere outside fo the current page. And Relative URLs, which provide links to a page within the same website.</p>
+            <p>There are a few attributes that come in handy with <code>&lt;a&gt;</code> tags, but the <code>href</code> attribute is the one that actually makes the link send the user to a new location. Another useful attribute is the <code>target</code> attribute.</p>
+            <p>The <code>target</code> attribute opens the document in a few different locations. According to <a href="https://www.w3schools.com/html/html_links.asp">w3schools</a>he <code>target</code> attribute can be set to the following values:</p>
+            <ul>
+              <li><code>_self</code> - Default. Opens the document in the same window/tab as it was clicked.</li>
+              <li><code>_blank</code> - Opens the document in a new window or tab</li>
+              <li><code>_parent</code> - Opens the document in the parent frame</li>
+              <li><code>_top</code> - Opens the document in the full body of the window</li>
+            </ul>
+            <p>Images and buttons can also be used as links.</p>
+            <h5>Images as links</h5>
+            <p>To use images as links, you simply need to surround an image with the <code>&lt;a&gt;</code> tag. </p>
+            <h5>Buttons as links</h5>
+            <p>To use buttons as links, you need to set the <code>onclick</code> attribute. The example given by w3schools sets the attribute in the following way: <code>onclick="document.location='default.asp'"</code></p>
+            <h5>Link to an Email Address</h5>
+            <p>By using <code>mailto:</code> inside of the <code>href</code> attribute, you can open the user's email program and let them send an email to the email address provided</p>
+            <h5>Link Titles</h5>
+            <p>The <code>title</code> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
         </section>
 
         <section id="forms" class="main-section">
