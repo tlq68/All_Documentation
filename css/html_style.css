@@ -74,6 +74,11 @@ h3 {
   margin-top: 20px;
 }
 
+h4 {
+  font-size: 20px;
+  color: black;
+}
+
 p {
   margin: 15px 0;
 }
