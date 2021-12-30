@@ -69,14 +69,20 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
   color: black;
   margin-top: 20px;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 24px;
   color: black;
+}
+
+h5 {
+  font-size: 22px;
+  color: black;
+  margin-top: 15px;
 }
 
 p {
