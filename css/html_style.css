@@ -118,19 +118,6 @@ summary {
 summary:focus, summary:active details:focus, details:active {
   user-select: none;
 }
-.dropdown {
-  margin-bottom: 3em;
-}
-
-.dropdown-list {
-  margin-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 3em;
-}
-
-.dropdown-list > li:hover {
-  background-color: rgb(121, 110, 110);
-}
 
 code {
   padding: 5px;

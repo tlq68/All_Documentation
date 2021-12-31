@@ -119,7 +119,7 @@
             <h4>Paragraph</h4>
             <p>The paragraph or <code>&lt;p&gt;</code> tag is used to form paragraphs. In HTML syntax, this tag can be used to group together related information, but it is also best used around large groups of text.</p> 
             <h4>Other Structure Tags</h4>
-            <p>The other structural tags that are used have more specific uses. Unlike the <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code> and <code>&lt;p&gt;</code> tags which are simply used for grouping related information, the other structural tags provide different syntax and should be used in other situations. We have already seen a couple of the structure tags in the list below. Information was taken from <a href="https://itwebtutorials.mga.edu/html/chp2/document-structure.aspx#top">Middle Georgia State University</a></p>
+            <p>The other structural tags that are used have more specific uses. Unlike the <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code> and <code>&lt;p&gt;</code> tags which are simply used for grouping related information, the other structural tags provide different syntax and should be used in other situations. We have already seen a couple of the structure tags in the list below. Information was taken from <a href="https://itwebtutorials.mga.edu/html/chp2/document-structure.aspx#top" target="_blank">Middle Georgia State University</a></p>
             <ul>
               <h5>The <code>&lt;header&gt;</code> tag</h5>
               <li>The <code>&lt;header&gt;</code> element is used as a container for page heading content. The tag typically contains heading tags (<code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>), a logo image, or other content that introduces the content. It is possible to have more than one <code>&lt;header&gt;</code> tag per page; however, the <code>&lt;header&gt;</code> cannot be coded within a <code>&lt;footer&gt;</code> or another <code>&lt;header&gt;</code> tag.</li>
@@ -147,7 +147,7 @@
             <h4>Links</h4>
             <p>Links, also sometimes referred to as anchors, can be used in an HTML document by using the <code>&lt;a&gt;</code> tag. There are two types of URLs that can be used as links. Absolute URLs, which use a full web address to most likely link to somewhere outside fo the current page. And Relative URLs, which provide links to a page within the same website.</p>
             <p>There are a few attributes that come in handy with <code>&lt;a&gt;</code> tags, but the <code>href</code> attribute is the one that actually makes the link send the user to a new location. Another useful attribute is the <code>target</code> attribute.</p>
-            <p>The <code>target</code> attribute opens the document in a few different locations. According to <a href="https://www.w3schools.com/html/html_links.asp">w3schools</a>he <code>target</code> attribute can be set to the following values:</p>
+            <p>The <code>target</code> attribute opens the document in a few different locations. According to <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">w3schools</a>he <code>target</code> attribute can be set to the following values:</p>
             <ul>
               <li><code>_self</code> - Default. Opens the document in the same window/tab as it was clicked.</li>
               <li><code>_blank</code> - Opens the document in a new window or tab</li>
@@ -167,27 +167,73 @@
 
         <section id="forms" class="main-section">
           <h3>Forms</h3>
-              <ul class="dropdown">
-                <li>
-                  <details>
-                    <summary>
-                       Input
-                    </summary>
-                    <ol class="dropdown-list">
-                      <li>text</li>
-                      <li>number</li>
-                      <li>radio</li>
-                    </ol>
-                  </details>
-                </li>
-              </ul>
-
+          <h4>Input</h4>
+          <p>The <code>&lt;input&gt;</code> tag specifies an input field where the user can enter data. According to <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">w3schools</a>, the <code>&lt;input&gt;</code> element is the most important form element. There are several different ways the <code>&lt;input&gt;</code> element can be displayed.</p>
+          <ul>
+            <li><code>&lt;input type="button"&gt;</code></li>
+            <li><code>&lt;input type="checkbox"&gt;</code></li>
+            <li><code>&lt;input type="color"&gt;</code></li>
+            <li><code>&lt;input type="date"&gt;</code></li>
+            <li><code>&lt;input type="datetime-local"&gt;</code></li>
+            <li><code>&lt;input type="email"&gt;</code></li>
+            <li><code>&lt;input type="file"&gt;</code></li>
+            <li><code>&lt;input type="hidden"&gt;</code></li>
+            <li><code>&lt;input type="image"&gt;</code></li>
+            <li><code>&lt;input type="month"&gt;</code></li>
+            <li><code>&lt;input type="number"&gt;</code></li>
+            <li><code>&lt;input type="password"&gt;</code></li>
+            <li><code>&lt;input type="radio"&gt;</code></li>
+            <li><code>&lt;input type="range"&gt;</code></li>
+            <li><code>&lt;input type="reset"&gt;</code></li>
+            <li><code>&lt;input type="search"&gt;</code></li>
+            <li><code>&lt;input type="submit"&gt;</code></li>
+            <li><code>&lt;input type="tel"&gt;</code></li>
+            <li><code>&lt;input type="text"&gt;</code> (default value)</li>
+            <li><code>&lt;input type="time"&gt;</code></li>
+            <li><code>&lt;input type="url"&gt;</code></li>
+            <li><code>&lt;input type="week"&gt;</code></li>
+            <p>There are also several attributes which can be found on the same <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">page</a>.</p>
+            <p>The relevant attributes are:</p>
             <ul>
-            <li>Select Tag</li>
-            <li>Option Tag</li>
-            <li>Radio Buttons</li>
-            <li>Textarea</li>
-            <li>Labels</li>
+              <li><code>accept</code></li>
+              <li><code>alt</code></li>
+              <li><code>autocomplete</code></li>
+              <li><code>autofocus</code></li>
+              <li><code>checked</code></li>
+              <li><code>dirname</code></li>
+              <li><code>disabled</code></li>
+              <li><code>form</code></li>
+              <li><code>formaction</code></li>
+              <li><code>formenctype</code></li>
+              <li><code>formnovalidate</code></li>
+              <li><code>formtarget</code></li>
+              <li><code>height</code></li>
+              <li><code>list</code></li>
+              <li><code>max</code></li>
+              <li><code>maxlength</code></li>
+              <li><code>min</code></li>
+              <li><code>minlength</code></li>
+              <li><code>multiple</code></li>
+              <li><code>name</code></li>
+              <li><code>pattern</code></li>
+              <li><code>placeholder</code></li>
+              <li><code>readonly</code></li>
+              <li><code>required</code></li>
+              <li><code>size</code></li>
+              <li><code>src</code></li>
+              <li><code>step</code></li>
+              <li><code>type</code></li>
+              <li><code>value</code></li>
+              <li><code>width</code></li>
+            </ul>
+            <p>As you can see, there are a variety of types and attributes that can be used. The best way to learn all of them is to get some practice.</p>
+            <h4>Select Tag</h4>
+            <p>When used with the <code>&lt;option&gt;</code> and <code>&lt;optgroup&gt;</code> tags, one can create dropdown menus for forms.</p>
+            <h4>Textarea</h4>
+            <p>The <code>&lt;textarea&gt;</code> tag is very similar to the <code>&lt;text&gt;</code> tag, but you can fit much more text into this tag. The size of the text area can be determined by the <code>&lt;cols&gt;</code> and <code>&lt;rows&gt;</code> attributes or with CSS. The <code>resize</code> attribute can be set to <span style="color:blue">none</span> to prevent resizing.</p>
+            <h4>Labels</h4>
+            <p>Labels have accessibility features such as letting the label be read aloud for screen reader users and increased hit area.</p>
+            <p>The <code>for</code> attribute of the <code>&lt;label&gt;</code> tag must be equal to the id attribute of the related element in order to bind them togetyher. A label can also be bound to an element by placing the element inside the <code>&lt;label&gt;</code> element.</p>
           </ul>
         </section>
 
