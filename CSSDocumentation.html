@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/html_style.css">
+
+  <title>CSS Documentation</title>
+</head>
+<body>
+
+
+  <nav id="navbar" class="menu">
+    <header id="title" class="text-center"><h1>HTML Documentation</h1></header>
+
+    <a href="#introduction_to_html" class="nav-link menu__item">Introduction to HTML</a>
+    <div class="menu__divider"></div>
+    <a href="#html_hierarchy" class="nav-link menu__item">HTML Hierarchy</a>
+    <div class="menu__divider"></div>
+    <a href="#head" class="nav-link menu__item">Head</a>
+  </nav>
+
+  <div class="container">
+    <main id="main-doc" class="row">
+      <section id="introduction_to_html" class="main-section">
+      <h2>Introduction to HTML</h2>
+      <div>
+          <p id="first_paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ullam aliquid dolorem? Repudiandae eligendi veniam totam, nemo voluptatem at voluptatum molestias debitis molestiae laborum illum velit.
+          </p>
+    
+          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">MDN</a> describes HTML in the
+          following way:
+          </p>
+
+          <blockquote>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita perspiciatis, corporis architecto nihil vero explicabo odio inventore dolorum aspernatur aliquam excepturi voluptatum, iure praesentium voluptas ipsam, et suscipit culpa facere voluptates? Facere omnis distinctio culpa numquam molestiae soluta similique magni perferendis, libero unde esse non recusandae perspiciatis iste illo, temporibus nam aliquid quaerat eveniet. Corporis molestias numquam reiciendis accusamus doloremque?
+          </blockquote>
+        </div>
+      </section>
+
+      <div id="html_hierarchy" class="main-section">
+        <h2>HTML Hierarchy</h2>
+        <section id="relationships" class="main-section">
+          <h3>Family Tree</h3>
+          <p>The Family tree of an HTML document contains various parents, siblings, children, ancestors and descendants</p>
+        </section>
+      </div>
+
+      <div id="head" class="main-section">
+        <h2>Head</h2>
+        <section id="head_tags" class="main-section">
+          <h3>Head Tags</h3>
+          <p>The <code>&lt;head&gt;</code> is where we will define information about the rest of the document. In the head, you can find information about the title, metadata and some of the sources used within the document such as links or stylesheets.</p>
+          <p>According to <a href="https://www.w3schools.com/html/html_head.asp" target="_blank">w3schools</a> , the elements that can be found in the head are the following:</p>
+          <ul>
+            <li>The <code>&lt;head&gt;</code> element is a container for metadata</li>
+            <li>The <code>&lt;head&gt;</code> element is placed between the <code>&lt;html&gt;</code> tag and the <code>&lt;body&gt;</code> tag</li>
+            <li>The <code>&lt;title&gt;</code> element is required and it defines the title of the document</li>
+            <li>The <code>&lt;style&gt;</code> element is used to define style information for a single document</li>
+            <li>The <code>&lt;link&gt;</code> tag is most often used to link to external style sheetss</li>
+            <li>The <code>&lt;meta&gt;</code> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings</li>
+            <li>The <code>&lt;script&gt;</code> element is used to define client-side JavaScripts</li>
+            <li>The <code>&lt;base&gt;</code> element specifies the base URL and/or target for all relative URLs in a page</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
