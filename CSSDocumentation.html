@@ -36,7 +36,6 @@
     <a href="#adding_css" class="nav-link menu__item">Adding CSS</a>
     <div class="menu__divider"></div>
     <a href="#css_comments" class="nav-link menu__item">CSS Comments</a><div class="menu__divider"></div>
-    <a href="#clearfix" class="nav-link menu__item">Clearfix</a><div class="menu__divider"></div>
     <a href="#box_model" class="nav-link menu__item">Box Model</a>
   </nav>
 
@@ -157,6 +156,28 @@
           <p>A CSS comment is placed inside the <code>&lt;style&gt;</code> element, and starts with <code>/*</code> and ends with <code>*/</code>.</p>
         </section>  
       </div>
+
+      <div id="box_model">
+        <section class="main-section">
+          <h2>Box Model</h2>
+          <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of:</p>
+          <ul>
+            <li><strong>Content</strong> - The content of the box, where text and images appear.</li>
+            <li><strong>Padding</strong> - Clears an area around the content. The padding is transparent.</li>
+            <li><strong>Border</strong> - A border that goes around the padding and content.</li>
+            <li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent.</li>
+          </ul>
+          <h3>Width and Height</h3>
+          <p>The total width of an element should be calculated like this:
+          </p>
+          <p>Total element width = width + left padding + right padding + left border + right border + left margin + right margin.
+          </p>
+          <p>The total height of an element should be calculated like this:
+          </p>
+          <p>Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+          </p>
+        </section>  
+      </div>
     </main>
   </div>
 
@@ -170,8 +191,9 @@
 
     including an external css file / 3 ways to add css (done)
 
-    css comments
-    clearfix
+    css comments (done)
+    clearfix (should be done with float)
+
     box model
     selectors (cont.)
     colors - name, rgb, rgba, hex, hsl
