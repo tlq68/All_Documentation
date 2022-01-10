@@ -15,10 +15,10 @@
 
 
 <!--  Section Template
-   <div id="!important">
-        <h2>!important</h2>
-        <section id="important"><h3>When to use !important</h3>
-        <p></p>
+   <div id="css_comments">
+        <section class="main-section">
+        <h2>CSS Comments</h2>
+          <p></p>
         </section>  
       </div>
 -->
@@ -29,12 +29,23 @@
     <div class="menu__divider"></div>
     <a href="#selectors_and_properties" class="nav-link menu__item">Selectors and Properties</a>
     <div class="menu__divider"></div>
-    <a href="#head" class="nav-link menu__item">Head</a>
+    <a href="#specificity" class="nav-link menu__item">Specificity</a>
+    <div class="menu__divider"></div>
+    <a href="#!important" class="nav-link menu__item">!important</a>
+    <div class="menu__divider"></div>
+    <a href="#adding_css" class="nav-link menu__item">Adding CSS</a>
+    <div class="menu__divider"></div>
+    <a href="#css_comments" class="nav-link menu__item">CSS Comments</a><div class="menu__divider"></div>
+    <a href="#clearfix" class="nav-link menu__item">Clearfix</a><div class="menu__divider"></div>
+    <a href="#box_model" class="nav-link menu__item">Box Model</a>
   </nav>
 
+  css comments
+    clearfix
+    box model
   <div class="container">
     <main id="main-doc" class="row">
-      <section id="introduction_to_html" class="main-section">
+      <section id="introduction_to_css" class="main-section">
       <h2>Introduction to CSS</h2>
       <div>
           <p id="first_paragraph">
@@ -51,9 +62,9 @@
         </div>
       </section>
 
-      <div id="selectors_and_properties" class="main-section">
+      <div id="selectors_and_properties">
+        <section class="main-section">
         <h2>Selectors and Properties</h2>
-        <section id="selectors" class="main-section">
           <h3>CSS Selectors</h3>
           <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. <a href="https://www.w3schools.com/css/css_selectors.asp">W3schools</a>  shows that there are 5 categories of selectors.</p>
           <ul id="selectors_list" class="bullets">
@@ -79,9 +90,9 @@
         </section>
       </div>
 
-      <div id="specificity" class="main-section">
+      <div id="specificity">
+        <section class="main-section">
         <h2>Specificity</h2>
-        <section id="head_tags" class="main-section">
           <h3>What is Specificity?</h3>
           <p>If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.</p>
           <p>Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.</p>
@@ -101,7 +112,7 @@
       </div>
 
       <div id="!important">
-        <section id="important">
+        <section class="main-section">
 
         <h2>!important</h2>
         <p>According to <a href="https://www.w3schools.com/css/css_important.asp">w3schools</a> the <code>!important</code> rule in CSS is used to add more importance to a property/value than normal.</p>
@@ -115,8 +126,8 @@
       </div>
 
       <div id="adding_css">
+        <section class="main-section">
         <h2>Adding CSS</h2>
-        <section id="three_ways_to_insert_css">
           <h3>Three Ways to Insert CSS</h3>
           <ul class="bullets">
             <li>External CSS</li>
@@ -138,6 +149,14 @@
           </ul>
         </section>  
       </div>
+
+      <div id="css_comments">
+        <section class="main-section">
+        <h2>CSS Comments</h2>
+          <p>Comments are used to explain the code, and may help when you edit the source code at a later date. Comments are ignored by browsers.</p>
+          <p>A CSS comment is placed inside the <code>&lt;style&gt;</code> element, and starts with <code>/*</code> and ends with <code>*/</code>.</p>
+        </section>  
+      </div>
     </main>
   </div>
 
@@ -149,11 +168,9 @@
 
     !important (done)
 
-    including an external css file / 3 ways to add css
+    including an external css file / 3 ways to add css (done)
 
     css comments
-    internal styles
-    inline styles 
     clearfix
     box model
     selectors (cont.)

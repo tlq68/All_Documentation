@@ -195,7 +195,6 @@ span.feature {
 @media (min-width: 992px) and (max-width: 1034px) {
   #main-doc {
     margin-left: 27vw;
-    border: 2px solid green;
   }
 }
 
