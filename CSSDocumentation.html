@@ -14,12 +14,20 @@
 <body>
 
 
+<!--  Section Template
+   <div id="!important">
+        <h2>!important</h2>
+        <section id="important"><h3>When to use !important</h3>
+        <p></p>
+        </section>  
+      </div>
+-->
   <nav id="navbar" class="menu">
-    <header id="title" class="text-center"><h1>HTML Documentation</h1></header>
+    <header id="title" class="text-center"><h1>CSS Documentation</h1></header>
 
-    <a href="#introduction_to_html" class="nav-link menu__item">Introduction to HTML</a>
+    <a href="#introduction_to_css" class="nav-link menu__item">Introduction to CSS</a>
     <div class="menu__divider"></div>
-    <a href="#html_hierarchy" class="nav-link menu__item">HTML Hierarchy</a>
+    <a href="#selectors_and_properties" class="nav-link menu__item">Selectors and Properties</a>
     <div class="menu__divider"></div>
     <a href="#head" class="nav-link menu__item">Head</a>
   </nav>
@@ -27,13 +35,13 @@
   <div class="container">
     <main id="main-doc" class="row">
       <section id="introduction_to_html" class="main-section">
-      <h2>Introduction to HTML</h2>
+      <h2>Introduction to CSS</h2>
       <div>
           <p id="first_paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ullam aliquid dolorem? Repudiandae eligendi veniam totam, nemo voluptatem at voluptatum molestias debitis molestiae laborum illum velit.
           </p>
     
-          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">MDN</a> describes HTML in the
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a> describes CSS in the
           following way:
           </p>
 
@@ -43,34 +51,163 @@
         </div>
       </section>
 
-      <div id="html_hierarchy" class="main-section">
-        <h2>HTML Hierarchy</h2>
-        <section id="relationships" class="main-section">
-          <h3>Family Tree</h3>
-          <p>The Family tree of an HTML document contains various parents, siblings, children, ancestors and descendants</p>
+      <div id="selectors_and_properties" class="main-section">
+        <h2>Selectors and Properties</h2>
+        <section id="selectors" class="main-section">
+          <h3>CSS Selectors</h3>
+          <p>CSS selectors are used to "find" (or select) the HTML elements you want to style. <a href="https://www.w3schools.com/css/css_selectors.asp">W3schools</a>  shows that there are 5 categories of selectors.</p>
+          <ul id="selectors_list" class="bullets">
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+            <li>Pseudo0class selectors (select elements based on a certain state)</li>
+            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+            <li>Attribute selectors (select elements ased on an attribute or attribute value)</li>
+          </ul>
+          <h4>Element Selector</h4>
+          <p>The element selector selects HTML elements based on the element name.</p>
+          <h4>Id Selector</h4>
+          <p>THe id selector uses the id attribute of an HTML element to select a specific element. </p>
+          <p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+          <h4>Class Selector</h4>
+          <p>The class selector selects HTML elements with a specific class attribute.</p>
+          <p>To select elements with a specific class, write a period(.) character, followed by the class name.</p>
+          <h4>The Universal Selector</h4>
+          <p>The universal selector (*) selects all HTML elements on the page.</p>
+          <h4>Grouping Selector</h4>
+          <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
         </section>
       </div>
 
-      <div id="head" class="main-section">
-        <h2>Head</h2>
+      <div id="specificity" class="main-section">
+        <h2>Specificity</h2>
         <section id="head_tags" class="main-section">
-          <h3>Head Tags</h3>
-          <p>The <code>&lt;head&gt;</code> is where we will define information about the rest of the document. In the head, you can find information about the title, metadata and some of the sources used within the document such as links or stylesheets.</p>
-          <p>According to <a href="https://www.w3schools.com/html/html_head.asp" target="_blank">w3schools</a> , the elements that can be found in the head are the following:</p>
-          <ul>
-            <li>The <code>&lt;head&gt;</code> element is a container for metadata</li>
-            <li>The <code>&lt;head&gt;</code> element is placed between the <code>&lt;html&gt;</code> tag and the <code>&lt;body&gt;</code> tag</li>
-            <li>The <code>&lt;title&gt;</code> element is required and it defines the title of the document</li>
-            <li>The <code>&lt;style&gt;</code> element is used to define style information for a single document</li>
-            <li>The <code>&lt;link&gt;</code> tag is most often used to link to external style sheetss</li>
-            <li>The <code>&lt;meta&gt;</code> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings</li>
-            <li>The <code>&lt;script&gt;</code> element is used to define client-side JavaScripts</li>
-            <li>The <code>&lt;base&gt;</code> element specifies the base URL and/or target for all relative URLs in a page</li>
+          <h3>What is Specificity?</h3>
+          <p>If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.</p>
+          <p>Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.</p>
+          <p>The universal selector (*) has low specificity, while ID selectors are highly specific!</p>
+          <h3>Specificity Hierarchy</h3>
+          <ul id="specificity-hierarchy-list" class="bullets">
+            <li>Inline styles - an inline style is attched directly to the element to be styled. Example: &lt;h1 style="color: #ffffff;"&gt;. (<span class="red">Highest Priority</span>)</li>
+            <li><strong>IDs</strong> - An ID is a unique identifier for the page elements, such as #navbar.</li>
+            <li><strong>Classes, attributes and pseudo-classes</strong> - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.</li>
+            <li><strong>Elements and pseudo-elements</strong> - This category includes element names and pseudo-elements, such as h1, div, :before and :after.</li>
           </ul>
+          <br>
+          <h4>Calculating Specificity Hierarchy</h4>
+          <p>Start at 0, add 1000 for style attribute, add 100 for each ID, add 10 for each attribute, class or pseudo-class, add 1 for each element name or pseudo-element.</p>
+          <p>In the case of equal specificity, the latest rule is applied.</p>
         </section>
       </div>
+
+      <div id="!important">
+        <h2>!important</h2>
+        <section id="important"><h3>When to use !important</h3>
+        <p></p>
+        </section>  
+      </div>
+
     </main>
   </div>
+
+  <p>
+    Things to add: 
+    selectors and properties (done)
+    
+    specificity (done)
+
+    !important
+    including an external css file / 3 ways to add css
+    css comments
+    internal styles
+    inline styles 
+    clearfix
+    box model
+    selectors (cont.)
+    colors - name, rgb, rgba, hex, hsl
+    opacity / transparency 
+    backgrounds / background images - repeat, attachment, shorthand, clip origin
+    attribute selectors
+    properties
+    gradient
+    box shadow
+    transform
+    border - border-style
+    border radius
+    margin
+    padding
+    outline
+    css units
+    height
+    width
+    text - color, alignment, decoration, transformation, spacing, shadow, direction
+    font - family, fallbacks, style, size, google, pairings
+    icons - font awesome, bootstrap, google
+    links
+    lists 
+    tables - borders, size, alignment, style, responsive 
+    display - block, inline, none, inline-block,  (visibility?)
+    max-width / max-height
+    position - static, relative, fixed, absolute, sticky
+    z-index
+    overflow - visibile, hidden, scroll, auto, overflow-x/y
+    float - left, right, none, inherit
+    clear
+    align
+    combinators - descendant, child, adjacent sibling, general sibling
+    pseudo classes
+    pseudo elements
+    css navbars
+    dropdowns
+    image gallery
+    image sprites
+    attr selectors
+    css forms
+    counters - reset, increment, content, counter()
+    grid 
+    before (page break)
+    after
+    tab size
+    whitespace
+    math functions
+
+    css advanced
+    border-image
+    multiple backgrounds
+    color keywords
+    shadows and shadow effects
+    text affects - text-overflow, word-wrap, word-break, writing mode
+    web fonts - TrueType, OpenTye, The Web Open Font Format, SVG, Embedded OpenType
+    2D transforms
+    3D transforms
+    transitions
+    animations
+    tooltips
+    styling images
+    reflecting images - box-reflect
+    object-fit - fill, contain, cover, none, scale-down
+    object-position
+    masking 
+    buttons
+    pagination
+    columns
+    user interface
+    variables
+    box-sizing
+    media queries
+    flexbox
+
+    responsive
+
+    viewport
+    grid
+    media queries
+    images
+    videos 
+    frameworks
+    templates
+
+  </p>
 
   <script src="script.js"></script>
 </body>

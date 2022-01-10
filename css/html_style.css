@@ -156,6 +156,14 @@ span.feature {
   white-space: nowrap;
 }
 
+.bullets {
+  list-style-type: disc;
+}
+
+.red {
+  color: rgb(196, 18, 18);
+}
+
 /* End main-content */
 
 @media (min-width: 1200px) and (max-width: 1299px) {
