@@ -160,12 +160,16 @@ span.feature {
   list-style-type: disc;
 }
 
+.numbered-list {
+  list-style: decimal;
+}
+
 .red {
   color: rgb(196, 18, 18);
 }
 
 .blue {
-  color: blue;
+  color: rgb(37, 37, 175);
 }
 
 /* End main-content */

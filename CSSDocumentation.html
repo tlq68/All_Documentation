@@ -101,12 +101,43 @@
       </div>
 
       <div id="!important">
+        <section id="important">
+
         <h2>!important</h2>
-        <section id="important"><h3>When to use !important</h3>
-        <p></p>
+        <p>According to <a href="https://www.w3schools.com/css/css_important.asp">w3schools</a> the <code>!important</code> rule in CSS is used to add more importance to a property/value than normal.</p>
+        <p>In fact, if youuse the <code>!important</code> rule, it will override ALL previous styling rules for that specific property on that element!</p>
+        <p>The only way to override an <code>!important</code> rule is to include another <code>!important</code> rule on a declaration with the same (or higher) specificity in the source code.</p>
+        <h3>When to use !important</h3>
+        <p>One way to use <code>!important</code> is if you have to override a style that cannot be overridden in any other way. This could be if you are working on a Content Management System (CMS) and cannot edit the CSS code. They you can set some custom styles to override some of the CMS styles.</p>
+        <p>Another way to use <code>!important</code> is: Assume you want a special look for all buttons on a page. The look of a button can sometimes change if we put it inside another element with higher specificity, and the properties get in conflict.</p>
+        <p>To "force" all buttons to have the same look, no matter what, we can add the <code>!important</code> rule to the properties of the button.</p>
         </section>  
       </div>
 
+      <div id="adding_css">
+        <h2>Adding CSS</h2>
+        <section id="three_ways_to_insert_css">
+          <h3>Three Ways to Insert CSS</h3>
+          <ul class="bullets">
+            <li>External CSS</li>
+            <li>Internal CSS</li>
+            <li>Inline CSS</li>
+          </ul>
+          <h3>External CSS</h3>
+          <p>External styles are defined within the &lt;link&gt; element, inside the &lt;head&gt; section of an HTML page.</p>
+          <h3>Internal CSS</h3>
+          <p>The interna style is defined inside the &lt;style&gt; element, inside the head section.</p>
+          <h3>Inline CSS</h3>
+          <p>Inline styles are defined within the "style" attribute of the relevant element.</p>
+          <h3>Cascading Order</h3>
+          <p>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:</p>
+          <ul class="numbered-list">
+            <li>Inline style (inside an HTML element)</li>
+            <li>External and internal style sheets (in the head section)</li>
+            <li>Browser default</li>
+          </ul>
+        </section>  
+      </div>
     </main>
   </div>
 
@@ -116,8 +147,10 @@
     
     specificity (done)
 
-    !important
+    !important (done)
+
     including an external css file / 3 ways to add css
+
     css comments
     internal styles
     inline styles 
