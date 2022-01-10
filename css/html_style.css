@@ -164,6 +164,10 @@ span.feature {
   color: rgb(196, 18, 18);
 }
 
+.blue {
+  color: blue;
+}
+
 /* End main-content */
 
 @media (min-width: 1200px) and (max-width: 1299px) {
