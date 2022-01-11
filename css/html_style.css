@@ -47,6 +47,18 @@ a.nav-link:focus {
   background-color: rgba(54, 44, 44, 0.301);
 }
 
+#back_to_top {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+  border:2px solid rgba(32, 38, 99, 0.301);
+  background-color: rgba(30, 49, 155, 0.301);
+}
+
+#back_to_top a {
+  color: rgb(41, 83, 161);
+}
+
 /* Fast scroll from anchors*/
 html {
   scroll-behavior: auto !important;
