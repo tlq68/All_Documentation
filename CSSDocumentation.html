@@ -37,11 +37,9 @@
     <div class="menu__divider"></div>
     <a href="#css_comments" class="nav-link menu__item">CSS Comments</a><div class="menu__divider"></div>
     <a href="#box_model" class="nav-link menu__item">Box Model</a>
+    <a href="#colors" class="nav-link menu__item">Colors</a><div class="menu__divider"></div>
   </nav>
 
-  css comments
-    clearfix
-    box model
   <div class="container">
     <main id="main-doc" class="row">
       <section id="introduction_to_css" class="main-section">
@@ -178,6 +176,51 @@
           </p>
         </section>  
       </div>
+
+      <div id="colors">
+        <section class="main-section">
+        <h2>Colors</h2>
+          <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+          <p>Color can be added to things like text, borders and backgrounds as well as other properties.</p>
+          <h3>Color Names</h3>
+          <p>Colors can be added to css by using names, such as:</p>
+          <ul>
+            <li><span style="color: tomato;">Tomato</span></li>
+            <li><span style="color: mediumblue;">Medium Blue</span></li>
+            <li><span style="color: limegreen;">Lime Green</span></li>
+            <li><span style="color: rebeccapurple;">Rebecca Purple</span></li>
+            <li><span style="color: gold;">Gold</span></li>
+          </ul>
+          <h3>RGB</h3>
+          <p>RGB takes 3 values one each for <span style="color: red;">red</span>, <span style="color: blue;">blue</span>, and <span style="color: green;">green</span>. Some examples include: </p>
+          <ul class="bullets">
+            <li><span style="color: rgb(197, 42, 42);">(197, 42, 42)</span></li>
+            <li><span style="color: rgb(42, 197, 42);">(42, 197, 42)</span></li>
+            <li><span style="color: rgb(42, 42, 197);">(42, 42, 197)</span></li>
+          </ul>
+          <h3>HSL</h3>
+          <p>HSL stands for Hue-Saturation-Lightness and can be used to make several colors.</p>
+          <ul class="bullets">
+            <li><span style="color: hsl(64, 40%, 50%)">hsl(64, 40%, 50%) </span></li>
+            <li><span style="color: hsl(10, 60%, 55%)">hsl(10, 60%, 55%) </span></li>
+            <li><span style="color: hsl(144, 20%, 40%)">hsl(144, 20%, 40%) </span></li>
+          </ul>
+          <h3>HEX</h3>
+          <p>HEX values start with a hash (#) and are followed by 6 or 3 numbers.</p>
+          <ul class="bullets">
+            <li><span style="color: #f3f;">#f3f</span></li>
+            <li><span style="color: #ed5000;">#ed5000</span></li>
+            <li><span style="color: #d17;">#d17</span></li>
+            <li><span style="color: #cccf00;">#cccf00</span></li>
+            <li><span style="color: #be0;">#be0</span></li>
+            <li><span style="color: #a2da59;">#a2da59</span></li>
+          </ul>
+          <h3>RGBA</h3>
+          <p>RGBA values also use <span style="color: red;">red</span>, <span style="color: blue;">blue</span>, and <span style="color: green;">green</span>, but RGBA can also add a level of transparency.</p>
+          <h3>HSLA</h3>
+          <p>HSLA valuse also use Hue-Saturation-Lightness, but HSLA can also add a level of transparency.</p>
+        </section>  
+      </div>
     </main>
   </div>
 
@@ -194,9 +237,9 @@
     css comments (done)
     clearfix (should be done with float)
 
-    box model
-    selectors (cont.)
+    box model (done)
     colors - name, rgb, rgba, hex, hsl
+
     opacity / transparency 
     backgrounds / background images - repeat, attachment, shorthand, clip origin
     attribute selectors
