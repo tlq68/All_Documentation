@@ -186,6 +186,8 @@ span.feature {
 
 /* End main-content */
 
+
+/* There should be a media query for the back to top button. When the screen is wide, it should be set to the Intro to XXX paragraph. In any other case, it should be set to the title*/
 @media (min-width: 1200px) and (max-width: 1299px) {
   #main-doc {
     margin-left: 20vw;
